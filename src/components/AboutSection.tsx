@@ -38,7 +38,7 @@ const AboutSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground font-body text-base leading-relaxed">
               <p>
-                I'm a software engineer with 5.5 years in the industry who discovered that the
+                I'm a software engineer with ~5.5 years in the industry who discovered that the
                 best code comes from deeply understanding the people who use it.
               </p>
               <p>

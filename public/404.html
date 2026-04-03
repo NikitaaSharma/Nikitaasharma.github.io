@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikita Sharma</title>
+    <script>
+      // Redirect 404s to the index.html with the path preserved
+      if (window.location.pathname !== "/") {
+        window.location.replace(
+          "/" + window.location.pathname.slice(1).replace(/&/g, "~and~")
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
