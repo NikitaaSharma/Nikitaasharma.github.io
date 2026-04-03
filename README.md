@@ -3,7 +3,7 @@
 Personal portfolio website for Nikita Sharma, a Software Engineer II @ Microsoft.
 Built with React, TypeScript, Vite, and Tailwind CSS with shadcn/ui components.
 
-**Live Site:** https://nikitasharma.github.io/
+**Live Site:** https://nikitaasharma.github.io/
 
 ## Technology Stack
 
