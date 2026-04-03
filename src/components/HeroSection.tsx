@@ -1,0 +1,108 @@
+import { motion } from "framer-motion";
+
+const FloatingShape = ({ className, delay = 0 }: { className: string; delay?: number }) => (
+  <motion.div
+    className={className}
+    animate={{ y: [0, -20, 0], rotate: [0, 10, -10, 0] }}
+    transition={{ duration: 6, repeat: Infinity, delay, ease: "easeInOut" }}
+  />
+);
+
+const HeroSection = () => {
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
+      {/* Floating geometric shapes */}
+      <FloatingShape
+        className="absolute top-20 left-[10%] w-20 h-20 rounded-full bg-coral/20 blur-sm"
+        delay={0}
+      />
+      <FloatingShape
+        className="absolute top-40 right-[15%] w-16 h-16 rounded-lg bg-electric-blue/20 blur-sm rotate-45"
+        delay={1}
+      />
+      <FloatingShape
+        className="absolute bottom-32 left-[20%] w-24 h-24 rounded-full bg-golden/20 blur-sm"
+        delay={2}
+      />
+      <FloatingShape
+        className="absolute bottom-48 right-[25%] w-14 h-14 rounded-lg bg-lime/20 blur-sm rotate-12"
+        delay={0.5}
+      />
+      <FloatingShape
+        className="absolute top-[60%] left-[5%] w-12 h-12 rounded-full bg-grape/20 blur-sm"
+        delay={1.5}
+      />
+      <FloatingShape
+        className="absolute top-32 right-[40%] w-10 h-10 rounded-lg bg-blush/15 rotate-45"
+        delay={3}
+      />
+
+      <div className="relative z-10 text-center max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <p className="font-body text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
+            Software Engineer · UX Enthusiast · Color Lover
+          </p>
+        </motion.div>
+
+        <motion.h1
+          className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-[0.9] mb-8"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <span className="text-gradient-multi">I build</span>
+          <br />
+          <span className="text-foreground">things people</span>
+          <br />
+          <span className="text-gradient-coral">love to use.</span>
+        </motion.h1>
+
+        <motion.p
+          className="font-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
+          5.5 years of crafting digital experiences where engineering meets design.
+          I'd rather talk to users than write code — and that makes my code better.
+        </motion.p>
+
+        <motion.div
+          className="flex gap-4 justify-center flex-wrap"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <a
+            href="#experience"
+            className="px-8 py-4 rounded-full bg-foreground text-background font-display font-semibold text-sm tracking-wide hover:scale-105 transition-transform"
+          >
+            See My Work
+          </a>
+          <a
+            href="#contact"
+            className="px-8 py-4 rounded-full border-2 border-foreground/20 font-display font-semibold text-sm tracking-wide hover:border-coral hover:text-coral transition-colors"
+          >
+            Let's Talk
+          </a>
+        </motion.div>
+      </div>
+
+      {/* Bottom color bar */}
+      <div className="absolute bottom-0 left-0 right-0 h-1 flex">
+        <div className="flex-1 bg-coral" />
+        <div className="flex-1 bg-golden" />
+        <div className="flex-1 bg-lime" />
+        <div className="flex-1 bg-electric-blue" />
+        <div className="flex-1 bg-grape" />
+        <div className="flex-1 bg-blush" />
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
