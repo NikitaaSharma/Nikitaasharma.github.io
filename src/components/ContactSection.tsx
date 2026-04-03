@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 const socials = [
-  { icon: Github, label: "GitHub", href: "#" },
-  { icon: Linkedin, label: "LinkedIn", href: "#" },
-  { icon: Twitter, label: "Twitter", href: "#" },
-  { icon: Mail, label: "Email", href: "mailto:hello@example.com" },
+  { icon: Github, label: "GitHub", href: import.meta.env.VITE_GITHUB_URL },
+  { icon: Linkedin, label: "LinkedIn", href: import.meta.env.VITE_LINKEDIN_URL },
+  { icon: Mail, label: "Email", href: `mailto:${import.meta.env.VITE_EMAIL}` },
 ];
 
 const ContactSection = () => {
