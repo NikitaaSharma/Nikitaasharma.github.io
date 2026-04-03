@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MessageSquare, Palette, Code2, Users } from "lucide-react";
+import TiltCard from "./TiltCard";
 
 const values = [
   {
@@ -8,6 +9,7 @@ const values = [
     description: "Understanding the problem is 80% of the solution. I start every project with conversations, not code editors.",
     gradient: "from-coral/10 to-golden/10",
     iconColor: "text-coral",
+    glare: "hsl(4, 80%, 63%)",
   },
   {
     icon: Palette,
@@ -15,6 +17,7 @@ const values = [
     description: "Beautiful interfaces aren't decoration — they're functional architecture that guides users intuitively.",
     gradient: "from-electric-blue/10 to-grape/10",
     iconColor: "text-electric-blue",
+    glare: "hsl(210, 90%, 56%)",
   },
   {
     icon: Users,
@@ -22,6 +25,7 @@ const values = [
     description: "Every design decision should trace back to a real user need. Empathy is my strongest technical skill.",
     gradient: "from-lime/10 to-electric-blue/10",
     iconColor: "text-lime",
+    glare: "hsl(85, 65%, 50%)",
   },
   {
     icon: Code2,
@@ -29,6 +33,7 @@ const values = [
     description: "Color is communication. The right palette doesn't just look good — it creates emotion and clarity.",
     gradient: "from-golden/10 to-blush/10",
     iconColor: "text-golden",
+    glare: "hsl(42, 95%, 58%)",
   },
 ];
 
@@ -54,16 +59,19 @@ const PhilosophySection = () => {
           {values.map((v, i) => (
             <motion.div
               key={v.title}
-              className={`p-8 rounded-2xl bg-gradient-to-br ${v.gradient} border border-border/50`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              whileHover={{ y: -4 }}
             >
-              <v.icon className={`w-8 h-8 ${v.iconColor} mb-4`} />
-              <h3 className="font-display text-xl font-bold mb-2">{v.title}</h3>
-              <p className="font-body text-muted-foreground text-sm leading-relaxed">{v.description}</p>
+              <TiltCard
+                className={`p-8 rounded-2xl bg-gradient-to-br ${v.gradient} border border-border/50 cursor-default`}
+                glareColor={v.glare}
+              >
+                <v.icon className={`w-8 h-8 ${v.iconColor} mb-4`} />
+                <h3 className="font-display text-xl font-bold mb-2">{v.title}</h3>
+                <p className="font-body text-muted-foreground text-sm leading-relaxed">{v.description}</p>
+              </TiltCard>
             </motion.div>
           ))}
         </div>

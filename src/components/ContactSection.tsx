@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, Github, Linkedin } from "lucide-react";
+import MagneticButton from "./MagneticButton";
 
 const socials = [
   { icon: Github, label: "GitHub", href: import.meta.env.VITE_GITHUB_URL },
@@ -35,14 +36,10 @@ const ContactSection = () => {
           transition={{ delay: 0.2 }}
         >
           {socials.map((s) => (
-            <a
-              key={s.label}
-              href={s.href}
-              className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:border-foreground/40 font-body text-sm font-medium transition-all hover:scale-105"
-            >
+            <MagneticButton key={s.label} href={s.href} strength={0.35} className="flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:border-foreground/40 font-body text-sm font-medium transition-all hover:scale-105">
               <s.icon className="w-4 h-4" />
               {s.label}
-            </a>
+            </MagneticButton>
           ))}
         </motion.div>
       </div>
