@@ -1,6 +1,7 @@
 # Nikita Sharma - Portfolio Website
 
-Personal portfolio website for Nikita Sharma, a Full Stack Developer. Built with React, TypeScript, Vite, and Tailwind CSS with shadcn/ui components.
+Personal portfolio website for Nikita Sharma, a Software Engineer II @ Microsoft.
+Built with React, TypeScript, Vite, and Tailwind CSS with shadcn/ui components.
 
 **Live Site:** https://nikitasharma.github.io/
 
