@@ -10,7 +10,7 @@ const experiences = [
     company: "Microsoft",
     location: "Bengaluru, KA",
     logo: microsoftLogo,
-    description: "Building impactful AI-first features in D365 Omnichannel at scale, blending engineering excellence with a deep focus on user experience and design thinking.",
+    description: "Building AI-first features in D365 Omnichannel at scale — from intelligent routing to copilot integrations. Developing product instincts by working closely with PMs, customers, and data to shape what ships next.",
     color: "bg-electric-blue",
     accent: "border-electric-blue/30",
     hoverGlow: "hover:shadow-[0_0_40px_-10px_hsl(210,90%,56%,0.3)]",
@@ -21,7 +21,7 @@ const experiences = [
     company: "Target",
     location: "Bengaluru, KA",
     logo: targetLogo,
-    description: "Spent 4 years crafting frontend and backend experiences, collaborating with cross-functional teams, and growing from an engineer into a UX-minded product thinker.",
+    description: "Spent 4 years building and scaling distributed systems, leading cross-functional initiatives, and growing from an individual contributor into an engineer with strong product sense and stakeholder instincts.",
     color: "bg-coral",
     accent: "border-coral/30",
     hoverGlow: "hover:shadow-[0_0_40px_-10px_hsl(4,80%,63%,0.3)]",
@@ -41,10 +41,10 @@ const ExperienceSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-gradient-coral">5.5 years</span> of
+            <span className="text-gradient-coral">5.5 years</span> of building.
           </h2>
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-16">
-            building & growing.
+            Now ready to lead <span className="text-gradient-multi">what</span> gets built.
           </h2>
         </motion.div>
 

@@ -23,7 +23,7 @@ const ContactSection = () => {
             <span className="text-gradient-multi">something together.</span>
           </h2>
           <p className="font-body text-muted-foreground text-lg mb-12 max-w-md mx-auto">
-            I love talking about products, design systems, and creative engineering.
+            I love talking about AI products, strategy, and the future of intelligent software.
             Let's grab a virtual coffee.
           </p>
         </motion.div>

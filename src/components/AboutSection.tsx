@@ -2,12 +2,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 const colorChips = [
-  { label: "UX Engineering", bg: "bg-coral/15 text-coral" },
+  { label: "AI/ML Systems", bg: "bg-coral/15 text-coral" },
   { label: "Product Thinking", bg: "bg-electric-blue/15 text-electric-blue" },
-  { label: "User Research", bg: "bg-lime/15 text-lime" },
-  { label: "Visual Design", bg: "bg-golden/15 text-golden" },
-  { label: "Frontend Dev", bg: "bg-grape/15 text-grape" },
-  { label: "Prototyping", bg: "bg-blush/15 text-blush" },
+  { label: "Product Strategy", bg: "bg-lime/15 text-lime" },
+  { label: "Data-Driven Decisions", bg: "bg-golden/15 text-golden" },
+  { label: "Full-Stack Engineering", bg: "bg-grape/15 text-grape" },
+  { label: "Roadmap & Prioritization", bg: "bg-blush/15 text-blush" },
 ];
 
 const BLOCK_COLORS = [
@@ -81,21 +81,22 @@ const AboutSection = () => {
           {/* Content */}
           <div>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              More than a <span className="text-gradient-blue">developer.</span>
+              Engineer turning <span className="text-gradient-blue">Product.</span>
             </h2>
             <div className="space-y-4 text-muted-foreground font-body text-base leading-relaxed">
               <p>
-                I'm a software engineer with ~5.5 years in the industry who discovered that the
-                best code comes from deeply understanding the people who use it.
+                I'm a software engineer with ~5.5 years building AI-powered products at
+                Microsoft and Target — and I've realized I want to shape <em>what</em> gets
+                built, not just <em>how</em>.
               </p>
               <p>
-                I live at the intersection of engineering and design — where pixel-perfect UIs
-                meet scalable architecture. I believe great products are built through conversation,
-                not just code.
+                From shipping AI-first features in D365 Omnichannel to scaling distributed
+                systems, I've developed a deep product sense by being close to customers,
+                data, and cross-functional teams.
               </p>
               <p>
-                Colors inspire me. Creativity drives me. Every project is a canvas where
-                technical precision meets artistic expression.
+                Now I'm channeling that engineering depth into product leadership — because
+                PMs who've written the code make better bets on what to build next.
               </p>
             </div>
 
