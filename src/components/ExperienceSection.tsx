@@ -11,9 +11,9 @@ const experiences = [
     location: "Bengaluru, KA",
     logo: microsoftLogo,
     description: "Building AI-first features in D365 Omnichannel at scale — from intelligent routing to copilot integrations. Developing product instincts by working closely with PMs, customers, and data to shape what ships next.",
-    color: "bg-electric-blue",
-    accent: "border-electric-blue/30",
-    hoverGlow: "hover:shadow-[0_0_40px_-10px_hsl(210,90%,56%,0.3)]",
+    color: "bg-indigo",
+    accent: "border-indigo/30",
+    hoverGlow: "hover:shadow-[0_0_40px_-10px_hsl(245,58%,51%,0.3)]",
   },
   {
     period: "2020 — 2024",
@@ -22,9 +22,9 @@ const experiences = [
     location: "Bengaluru, KA",
     logo: targetLogo,
     description: "Spent 4 years building and scaling distributed systems, leading cross-functional initiatives, and growing from an individual contributor into an engineer with strong product sense and stakeholder instincts.",
-    color: "bg-coral",
-    accent: "border-coral/30",
-    hoverGlow: "hover:shadow-[0_0_40px_-10px_hsl(4,80%,63%,0.3)]",
+    color: "bg-cyan",
+    accent: "border-cyan/30",
+    hoverGlow: "hover:shadow-[0_0_40px_-10px_hsl(190,90%,50%,0.3)]",
   },
 ];
 
@@ -32,7 +32,7 @@ const ExperienceSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="experience" className="py-32 px-6 bg-gradient-warm">
+    <section id="experience" className="py-32 px-6 bg-gradient-subtle">
       <div className="max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -41,10 +41,10 @@ const ExperienceSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-gradient-coral">5.5 years</span> of building.
+            <span className="text-gradient-primary">5.5 years</span> of building.
           </h2>
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-16">
-            Now ready to lead <span className="text-gradient-multi">what</span> gets built.
+            Now ready to lead <span className="text-gradient-accent">what</span> gets built.
           </h2>
         </motion.div>
 

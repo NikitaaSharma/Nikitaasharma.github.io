@@ -2,12 +2,9 @@ import { useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const COLORS = [
-  "hsl(4, 80%, 63%)",    // coral
-  "hsl(42, 95%, 58%)",   // golden
-  "hsl(85, 65%, 50%)",   // lime
-  "hsl(210, 90%, 56%)",  // electric-blue
-  "hsl(270, 60%, 62%)",  // grape
-  "hsl(340, 75%, 65%)",  // blush
+  "hsl(245, 58%, 51%)",  // indigo
+  "hsl(190, 90%, 50%)",  // cyan
+  "hsl(38, 92%, 50%)",   // amber
 ];
 
 const CustomCursor = () => {
