@@ -67,7 +67,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="font-body text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
-            Software Engineer · UX Enthusiast · Color Lover
+            Software Engineer · AI Builder · Aspiring Product Leader
           </p>
         </motion.div>
 
@@ -78,11 +78,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           style={{ x: textX, y: textY }}
         >
-          <span className="text-gradient-multi">I build</span>
+          <span className="text-gradient-multi">From building AI</span>
           <br />
-          <span className="text-foreground">things people</span>
+          <span className="text-foreground">to deciding what</span>
           <br />
-          <span className="text-gradient-coral">love to use.</span>
+          <span className="text-gradient-coral">gets built next.</span>
         </motion.h1>
 
         <motion.p
@@ -91,8 +91,8 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          5.5 years of crafting digital experiences where engineering meets design.
-          I'd rather talk to users than write code — and that makes my code better.
+          5.5 years of engineering at scale. Now combining deep technical expertise
+          with product vision to shape what AI products should exist — and why.
         </motion.p>
 
         <motion.div
