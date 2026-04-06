@@ -72,7 +72,7 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.h1
-          className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-[0.9] mb-8"
+          className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9] mb-8"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
