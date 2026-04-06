@@ -7,33 +7,33 @@ const values = [
     icon: MessageSquare,
     title: "Why Before How",
     description: "Understanding the problem space before solutioning. The best products start with the right questions, not the fastest code.",
-    gradient: "from-coral/10 to-golden/10",
-    iconColor: "text-coral",
-    glare: "hsl(4, 80%, 63%)",
+    gradient: "from-indigo/10 to-cyan/10",
+    iconColor: "text-indigo",
+    glare: "hsl(245, 58%, 51%)",
   },
   {
     icon: Palette,
     title: "AI With Intent",
     description: "AI features should solve real problems, not be tech demos. Every model, every feature should trace back to a measurable user outcome.",
-    gradient: "from-electric-blue/10 to-grape/10",
-    iconColor: "text-electric-blue",
-    glare: "hsl(210, 90%, 56%)",
+    gradient: "from-cyan/10 to-indigo/10",
+    iconColor: "text-cyan",
+    glare: "hsl(190, 90%, 50%)",
   },
   {
     icon: Users,
     title: "Users Over Algorithms",
     description: "The best AI is invisible. Success isn't model accuracy — it's whether users accomplish their goals faster and more confidently.",
-    gradient: "from-lime/10 to-electric-blue/10",
-    iconColor: "text-lime",
-    glare: "hsl(85, 65%, 50%)",
+    gradient: "from-indigo/10 to-amber/10",
+    iconColor: "text-primary",
+    glare: "hsl(245, 58%, 51%)",
   },
   {
     icon: Code2,
     title: "Engineer's Edge",
     description: "PMs who've built the 'how' make better 'what' decisions. Deep technical fluency means I can evaluate trade-offs others can't see.",
-    gradient: "from-golden/10 to-blush/10",
-    iconColor: "text-golden",
-    glare: "hsl(42, 95%, 58%)",
+    gradient: "from-amber/10 to-indigo/10",
+    iconColor: "text-amber",
+    glare: "hsl(38, 92%, 50%)",
   },
 ];
 
@@ -48,7 +48,7 @@ const PhilosophySection = () => {
           viewport={{ once: true }}
         >
           <h2 className="font-display text-4xl md:text-6xl font-bold mb-4">
-            How I <span className="text-gradient-multi">think.</span>
+            How I <span className="text-gradient-primary">think.</span>
           </h2>
           <p className="font-body text-muted-foreground max-w-lg mx-auto">
             My approach to building products, shaped by 5.5 years of learning what truly matters.

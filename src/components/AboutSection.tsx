@@ -1,22 +1,22 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 const colorChips = [
-  { label: "AI/ML Systems", bg: "bg-coral/15 text-coral" },
-  { label: "Product Thinking", bg: "bg-electric-blue/15 text-electric-blue" },
-  { label: "Product Strategy", bg: "bg-lime/15 text-lime" },
-  { label: "Data-Driven Decisions", bg: "bg-golden/15 text-golden" },
-  { label: "Full-Stack Engineering", bg: "bg-grape/15 text-grape" },
-  { label: "Roadmap & Prioritization", bg: "bg-blush/15 text-blush" },
+  { label: "AI/ML Systems", bg: "bg-indigo/15 text-indigo" },
+  { label: "Product Thinking", bg: "bg-cyan/15 text-cyan" },
+  { label: "Product Strategy", bg: "bg-primary/15 text-primary" },
+  { label: "Data-Driven Decisions", bg: "bg-amber/15 text-amber" },
+  { label: "Full-Stack Engineering", bg: "bg-indigo/15 text-indigo" },
+  { label: "Roadmap & Prioritization", bg: "bg-cyan/15 text-cyan" },
 ];
 
 const BLOCK_COLORS = [
-  "bg-coral",
-  "bg-electric-blue",
-  "bg-golden",
-  "bg-lime",
-  "bg-grape",
-  "bg-blush",
+  "bg-indigo",
+  "bg-cyan",
+  "bg-amber",
+  "bg-primary",
+  "bg-indigo/70",
+  "bg-cyan/70",
 ];
 
 const AboutSection = () => {
@@ -27,7 +27,6 @@ const AboutSection = () => {
     setPoppedIndex(index);
     setTimeout(() => setPoppedIndex(null), 400);
 
-    // Shuffle colors
     setBlocks((prev) => {
       const next = [...prev];
       const j = Math.floor(Math.random() * next.length);
@@ -74,14 +73,14 @@ const AboutSection = () => {
               ))}
             </div>
             <p className="absolute -bottom-8 left-0 right-0 text-center font-body text-xs text-muted-foreground/60">
-              ✦ Click the blocks to shuffle colors
+              ✦ Click the blocks to shuffle
             </p>
           </div>
 
           {/* Content */}
           <div>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Engineer turning <span className="text-gradient-blue">Product.</span>
+              Engineer turning <span className="text-gradient-primary">Product.</span>
             </h2>
             <div className="space-y-4 text-muted-foreground font-body text-base leading-relaxed">
               <p>

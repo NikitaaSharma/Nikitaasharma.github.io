@@ -10,7 +10,7 @@ const socials = [
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-32 px-6 bg-gradient-cool">
+    <section id="contact" className="py-32 px-6 bg-gradient-dark">
       <div className="max-w-3xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -20,7 +20,7 @@ const ContactSection = () => {
           <h2 className="font-display text-5xl md:text-7xl font-bold mb-6">
             Let's create
             <br />
-            <span className="text-gradient-multi">something together.</span>
+            <span className="text-gradient-primary">something together.</span>
           </h2>
           <p className="font-body text-muted-foreground text-lg mb-12 max-w-md mx-auto">
             I love talking about AI products, strategy, and the future of intelligent software.
@@ -44,18 +44,11 @@ const ContactSection = () => {
         </motion.div>
       </div>
 
-      {/* Footer color bar */}
-      <div className="mt-32 h-1 flex max-w-5xl mx-auto rounded-full overflow-hidden">
-        <div className="flex-1 bg-coral" />
-        <div className="flex-1 bg-golden" />
-        <div className="flex-1 bg-lime" />
-        <div className="flex-1 bg-electric-blue" />
-        <div className="flex-1 bg-grape" />
-        <div className="flex-1 bg-blush" />
-      </div>
+      {/* Footer accent line */}
+      <div className="mt-32 h-px max-w-5xl mx-auto bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
       <p className="text-center mt-8 font-body text-xs text-muted-foreground">
-        Crafted with color & care · {new Date().getFullYear()}
+        Designed with intent · {new Date().getFullYear()}
       </p>
     </section>
   );
