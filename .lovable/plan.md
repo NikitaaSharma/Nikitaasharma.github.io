@@ -1,61 +1,27 @@
 
 
-# Flashlight Reveal Experience
+# Add Creative Hints to Site Copy
 
-## Concept
-When the site loads, everything is pitch black. The user's cursor becomes a circular "torch" that reveals content underneath — like shining a flashlight in the dark. After 5 seconds, a glowing "switch" hint appears in the top-right corner. Clicking/sliding it turns on the lights with a dramatic reveal animation.
+Small copy tweaks across 4 files to weave in creativity alongside the technical/product narrative.
 
-## Technical Approach
+## Changes
 
-### New Component: `FlashlightOverlay.tsx`
-A full-screen overlay that sits on top of all content. Uses a CSS `radial-gradient` mask centered on the cursor position to create the torch effect.
+### 1. HeroSection.tsx
+- Subtitle: "Software Engineer · AI Builder · Aspiring Product Leader" → "**Software Engineer · AI Builder · Creative Product Thinker**"
+- Subtext: Add creative angle — "...combining deep technical expertise with **creative product vision** to shape what AI products should exist — and why."
 
-- **State**: `isLightsOn` (boolean) — controls whether the overlay is active
-- **Mouse tracking**: Updates a CSS custom property (`--mx`, `--my`) on `mousemove` to position the radial gradient mask
-- **The mask**: A `div` covering the entire viewport with `background: black` and a CSS mask/clip using `radial-gradient(circle 120px at var(--mx) var(--my), transparent 0%, black 100%)` — this reveals content only where the cursor is
-- **Switch button**: A toggle in the top-right corner (styled like a light switch) that appears after 5 seconds with a pulsing glow animation to draw attention
-- **Light-on transition**: When the switch is toggled, the radial gradient expands from the switch position outward (animating the circle radius from 120px to 200vmax over ~1.5s), then the overlay fades out completely
-- **Mobile support**: On touch devices, track touch position instead of mouse. Show the switch immediately since there's no hover cursor
+### 2. AboutSection.tsx
+- Add a "Creative Problem Solving" chip (amber styling) to the colorChips array
+- Third paragraph: "Now I'm channeling that engineering depth **and creative instinct** into product leadership — because PMs who've written the code **and imagined the experience** make better bets on what to build next."
 
-### Changes to `Index.tsx`
-- Import and render `FlashlightOverlay` wrapping or overlaying the page content
-- Pass `isLightsOn` state up so the Navbar switch can be coordinated
+### 3. PhilosophySection.tsx
+- "AI With Intent" description: "...not be tech demos. Every model, every feature should trace back to a measurable user outcome — **designed with creative empathy**."
+- "Engineer's Edge" description: "...Deep technical fluency **paired with creative thinking** means I can evaluate trade-offs others can't see."
 
-### Changes to `src/index.css`
-- Add `cursor: none` on body when flashlight mode is active (hide default cursor, the torch IS the cursor)
-- Add keyframe for the switch's pulsing glow hint
+### 4. ContactSection.tsx
+- Paragraph: "I love talking about AI products, **creative strategy**, and the future of intelligent software."
+- Footer: "Designed with intent" → "**Crafted with intent & imagination**"
 
-### How the torch mask works (CSS approach)
-```css
-.flashlight-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: black;
-  /* Punch a transparent hole where the cursor is */
-  mask-image: radial-gradient(circle 140px at var(--mx) var(--my), black 0%, transparent 100%);
-  mask-composite: exclude;
-  -webkit-mask-image: radial-gradient(circle 140px at var(--mx) var(--my), transparent 0%, black 100%);
-  pointer-events: none; /* allow clicks through except the switch */
-}
-```
-The content renders normally underneath; the overlay just hides everything except the torch circle.
-
-### The Switch
-- Positioned top-right, rendered OUTSIDE the mask (or with `pointer-events: auto`)
-- Styled as a physical toggle switch with an "OFF/ON" label
-- After 5 seconds, a subtle text hint fades in: "Turn on the lights →" with a pulsing glow
-- On click: triggers the expanding circle animation → overlay disappears → normal site
-
-### Files
-1. **Create** `src/components/FlashlightOverlay.tsx` — the overlay + torch logic + switch
-2. **Edit** `src/pages/Index.tsx` — wrap content with the overlay
-3. **Edit** `src/index.css` — add cursor hiding and glow keyframes
-
-## User Experience Flow
-1. Page loads → screen is black, cursor hidden
-2. User moves mouse → a ~280px diameter circle of light follows, revealing content beneath
-3. After 5 seconds → a switch in the top-right glows and pulses with hint text
-4. User clicks the switch → light expands from that corner, filling the screen
-5. Overlay disappears → full site is visible, normal browsing begins
+## Summary
+Pure copy updates — no structural or styling changes. Adds a "creative" thread without undermining the technical/product identity.
 
