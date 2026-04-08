@@ -14,7 +14,7 @@ const values = [
   {
     icon: Palette,
     title: "AI With Intent",
-    description: "AI features should solve real problems, not be tech demos. Every model, every feature should trace back to a measurable user outcome.",
+    description: "AI features should solve real problems, not be tech demos. Every model, every feature should trace back to a measurable user outcome — designed with creative empathy.",
     gradient: "from-cyan/10 to-indigo/10",
     iconColor: "text-cyan",
     glare: "hsl(190, 90%, 50%)",
@@ -30,7 +30,7 @@ const values = [
   {
     icon: Code2,
     title: "Engineer's Edge",
-    description: "PMs who've built the 'how' make better 'what' decisions. Deep technical fluency means I can evaluate trade-offs others can't see.",
+    description: "PMs who've built the 'how' make better 'what' decisions. Deep technical fluency paired with creative thinking means I can evaluate trade-offs others can't see.",
     gradient: "from-amber/10 to-indigo/10",
     iconColor: "text-amber",
     glare: "hsl(38, 92%, 50%)",

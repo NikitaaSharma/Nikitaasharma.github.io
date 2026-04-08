@@ -23,7 +23,7 @@ const ContactSection = () => {
             <span className="text-gradient-primary">something together.</span>
           </h2>
           <p className="font-body text-muted-foreground text-lg mb-12 max-w-md mx-auto">
-            I love talking about AI products, strategy, and the future of intelligent software.
+            I love talking about AI products, creative strategy, and the future of intelligent software.
             Let's grab a virtual coffee.
           </p>
         </motion.div>
@@ -48,7 +48,7 @@ const ContactSection = () => {
       <div className="mt-32 h-px max-w-5xl mx-auto bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
       <p className="text-center mt-8 font-body text-xs text-muted-foreground">
-        Designed with intent · {new Date().getFullYear()}
+        Crafted with intent & imagination · {new Date().getFullYear()}
       </p>
     </section>
   );
