@@ -67,7 +67,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="font-body text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
-            Software Engineer · AI Builder · Aspiring Product Leader
+            Software Engineer · AI Builder · Creative Product Thinker
           </p>
         </motion.div>
 
@@ -92,7 +92,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           5.5 years of engineering at scale. Now combining deep technical expertise
-          with product vision to shape what AI products should exist — and why.
+          with creative product vision to shape what AI products should exist — and why.
         </motion.p>
 
         <motion.div

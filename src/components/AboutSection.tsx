@@ -8,6 +8,7 @@ const colorChips = [
   { label: "Data-Driven Decisions", bg: "bg-amber/15 text-amber" },
   { label: "Full-Stack Engineering", bg: "bg-indigo/15 text-indigo" },
   { label: "Roadmap & Prioritization", bg: "bg-cyan/15 text-cyan" },
+  { label: "Creative Problem Solving", bg: "bg-amber/15 text-amber" },
 ];
 
 const BLOCK_COLORS = [
@@ -94,8 +95,8 @@ const AboutSection = () => {
                 data, and cross-functional teams.
               </p>
               <p>
-                Now I'm channeling that engineering depth into product leadership — because
-                PMs who've written the code make better bets on what to build next.
+                Now I'm channeling that engineering depth and creative instinct into product leadership — because
+                PMs who've written the code and imagined the experience make better bets on what to build next.
               </p>
             </div>
 
