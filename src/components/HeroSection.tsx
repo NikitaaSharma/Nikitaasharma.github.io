@@ -67,7 +67,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="font-body text-sm tracking-[0.3em] uppercase text-muted-foreground mb-6">
-            Software Engineer · AI Builder · Aspiring Product Leader
+            Software Engineer · AI Builder · Creative Product Thinker
           </p>
         </motion.div>
 
